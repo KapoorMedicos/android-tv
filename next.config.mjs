@@ -6,7 +6,6 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  output: 'export',
   images: {
     unoptimized: true,
     remotePatterns: [
@@ -16,8 +15,7 @@ const nextConfig = {
       },
     ],
   },
-  // Required for GitHub Pages
-  basePath: '/android-tv',
+  allowedDevOrigins: ['http://192.168.68.111:3000'],
 }
 
 export default nextConfig
